@@ -1,6 +1,6 @@
 
 <h2 style="color:black;font-family:verdana;">Welcome to the <em>A Kavi Websites Production</em> Client Status Portal</h2> 
-<p>Note: Scheduled Networking Maintenance on Digital Ocean <br>
+<!--<p>Note: Scheduled Networking Maintenance on Digital Ocean <br>
 This will be expected to take place on <br>
 Start: 2021-01-18 22:00 UTC <br>
 End: 2021-01-18 23:00 UTC <br>
@@ -8,11 +8,15 @@ End: 2021-01-18 23:00 UTC <br>
 however connectivity will not be impacted. <br>
 The servers impacted by this maintenance will be <br>
 Web Server 2 mySQL/HTTPS and Web Server 3 mySQL/HTTPS<br>
-</p>
+</p> 
+-->
+<p>This page is soon being deprecated. Please check out the new status page <br>
+on regular HTTPS (not port 8085) powered by FreshStatus. Coming Soon! Come <br> 
+back here for updates!<br></p>
 
 <?php
 
-$output = shell_exec('python3 /home/pi/status/mSQLWB1.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB1.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -42,7 +46,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 }
 
-$output = shell_exec('python3 /home/pi/status/mSQLWB2.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB2.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -71,7 +75,7 @@ if(strpos($output, "SUCCESS") !== false){
     ';
 }
 
-$output = shell_exec('python3 /home/pi/status/mSQLWB3.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB3.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -103,7 +107,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /home/pi/status/mSQLWB1LOCAL.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB1LOCAL.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -136,7 +140,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /home/pi/status/80WB1LOCAL.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/80WB1LOCAL.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -168,7 +172,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /home/pi/status/443WB1.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/443WB1.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -199,7 +203,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /home/pi/status/443WB2.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/443WB2.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -228,7 +232,7 @@ if(strpos($output, "SUCCESS") !== false){
     ';
 }
 
-$output = shell_exec('python3 /home/pi/status/443WB3.py');
+$output = shell_exec('python3 /var/www/html/pyscripts/443WB3.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -265,7 +269,9 @@ if(strpos($output, "SUCCESS") !== false){
 <br>
 <br>
 <h4> Last Incident Report </h4>
-<p> No incidents have occured. 100% Uptime </p>
+<p>Currently working on resolving an issue with NGINX conf file is not working. <br>
+This issue will NOT impact any server performance. mySQL databases on this server <br>
+will still be 100% operational!</p>
 <br>
 <br>
 <br>
