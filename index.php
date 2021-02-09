@@ -269,8 +269,8 @@ if(strpos($output, "SUCCESS") !== false){
 <br>
 <br>
 <h4> Last Incident Report </h4>
-<p>Currently working on resolving an issue with NGINX conf file is not working. <br>
-This issue will NOT impact any server performance. mySQL databases on this server <br>
+<p>Updated [02/09/21 10:37 AM EST]: Currently working on resolving an issue with NGINX conf file is not working. <br>
+This issue will <b>NOT impact any server performance</b>. mySQL databases on this server <br>
 will still be 100% operational!</p>
 <br>
 <br>
