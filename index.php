@@ -16,7 +16,7 @@ back here for updates!<br></p>
 
 <?php
 
-$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB1.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/mSQLWB1.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -46,7 +46,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 }
 
-$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB2.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/mSQLWB2.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -75,7 +75,7 @@ if(strpos($output, "SUCCESS") !== false){
     ';
 }
 
-$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB3.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/mSQLWB3.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -107,7 +107,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /var/www/html/pyscripts/mSQLWB1LOCAL.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/mSQLWB1LOCAL.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -140,7 +140,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /var/www/html/pyscripts/80WB1LOCAL.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/80WB1LOCAL.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -172,7 +172,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /var/www/html/pyscripts/443WB1.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/443WB1.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -203,7 +203,7 @@ if(strpos($output, "SUCCESS") !== false){
 
 
 
-$output = shell_exec('python3 /var/www/html/pyscripts/443WB2.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/443WB2.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -232,7 +232,7 @@ if(strpos($output, "SUCCESS") !== false){
     ';
 }
 
-$output = shell_exec('python3 /var/www/html/pyscripts/443WB3.py');
+$output = shell_exec('python3 /var/www/status/pyscripts/443WB3.py');
 if(strpos($output, "SUCCESS") !== false){
     echo ' 
     <div id="container" style="white-space:nowrap">
@@ -269,10 +269,7 @@ if(strpos($output, "SUCCESS") !== false){
 <br>
 <br>
 <h4> Last Incident Report </h4>
-<p>[02/09/21 10:37 AM EST] - [02/11/21 12:37 PM EST]: Resolved an issue with NGINX conf file is not working. <br>
-This issue did <b>not impact any server performance</b>. mySQL databases on this server <br>
-were still be 100% operational! And all other sites were offloaded to backup servers <br>
- Thank you for your time and patience.</p>
+<p>This has been deprecated, please visit status.kavipatel.xyz for maintenance related issues. </p>
 <br>
 <br>
 <br>
